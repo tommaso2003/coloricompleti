@@ -1,0 +1,107 @@
+/* Stile di base per il corpo della pagina */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Contenitore principale per centrare i pannelli */
+  .container {
+    display: flex;
+    flex-wrap: wrap; /* I pannelli vanno a capo quando necessario */
+    gap: 20px; /* Distanza tra i pannelli */
+    justify-content: center; /* Centra i pannelli orizzontalmente */
+    padding: 20px;
+    max-width: 1200px; /* Limite massimo di larghezza */
+    margin: 0 auto; /* Centra il contenitore */
+  }
+  
+  /* Stile per ogni singolo pannello */
+  .panel {
+    flex: 1 1 calc(50% - 40px); /* Ogni pannello occupa il 50% della larghezza disponibile meno il gap */
+    max-width: 400px; /* Limite massimo per ogni pannello */
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px; /* Spazio sopra il pannello */
+  }
+  
+  /* Titolo del pannello */
+  .panel h2 {
+    font-size: 20px;
+    margin-bottom: 10px; /* Distanza tra il titolo e l'immagine */
+    color: #333;
+  }
+  
+  /* Stile per il contenitore dell'immagine */
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Stile per le immagini */
+  .image-container img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* Stile per il filtro colorato sovrapposto */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    border-radius: 5px;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+  }
+  
+  /* Pulsanti per i colori */
+  .buttons {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap; /* Permette ai pulsanti di andare a capo se necessario */
+    justify-content: center; /* Centra i pulsanti */
+    gap: 10px; /* Spaziatura tra i pulsanti */
+  }
+  
+  button {
+    flex: 0 1 calc(25% - 10px); /* Ogni pulsante occupa il 25% della larghezza disponibile meno il gap */
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Colori specifici per i pulsanti (corrispondenti ai colori dei filtri) */
+  button:nth-child(1) { background-color: #4A4844; }
+  button:nth-child(2) { background-color: #5D311E; }
+  button:nth-child(3) { background-color: #A1865B; }
+  button:nth-child(4) { background-color: #7F6030; }
+  button:nth-child(5) { background-color: #CDC8BC; }
+  button:nth-child(6) { background-color: #2A251C; }
+  button:nth-child(7) { background-color: #444F4B; }
+  button:nth-child(8) { background-color: #8D8373; }
+  button:nth-child(9) { background-color: #716C60; }
+  button:nth-child(10) { background-color: #ACA9A0; }
+  button:nth-child(11) { background-color: #A1967F; }
+  button:nth-child(12) { background-color: #57554D; }
+  button:nth-child(13) { background-color: #3E3026; }
+  
+  /* Pulsante di reset */
+  button:nth-child(14) {
+    background-color: #333;
+    color: #fff;
+  }
+  
